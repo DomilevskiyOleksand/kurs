@@ -1,4 +1,4 @@
-public class Main {
+﻿public class Main {
     public static void main(String[] args) {
 
         System.out.println("Явний метод");
@@ -63,7 +63,7 @@ public class Main {
         System.out.println("Средняя абсолютная ошибка: " + Errors.mediumAbsoleError(approximateResult, exactMatrix, diff));
         System.out.println("Максимальная Абсолютная Ошибка: " + Errors.maxAbsoleError(approximateResult, exactMatrix, diff));
         System.out.println("Средняя относительная ошибка: " + Errors.mediumRelativeError(approximateResult, exactMatrix, diff));
-        System.out.println("Максимальная Относительная ошибка: " + Errors.maxRelativeError(approximateResult, exactMatrix, diff));
+        System.out.println("Максимальная  Относительная ошибка: " + Errors.maxRelativeError(approximateResult, exactMatrix, diff));
     }
 
 
