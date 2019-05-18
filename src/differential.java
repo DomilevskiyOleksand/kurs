@@ -1,4 +1,4 @@
-public class differential {
+﻿public class differential {
 
         private final double x0 = 0;
         private final double x1 = 1;
@@ -10,6 +10,7 @@ public class differential {
         private final double b = 0.005;
         private final double c1 = 1.0;//конст с точного
         private final double alt = 0.005;//конст с точно
+
 
 
         public double getX0() {

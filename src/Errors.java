@@ -10,6 +10,7 @@ public class Errors {
             }
         }
 
+
         for (int i = 0; i < diff.getTpointsAmount(); i++) {
             for (int j = 0; j < diff.getHpointsAmount(); j++) {
                 error += matrix[i][j];
