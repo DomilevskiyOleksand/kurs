@@ -19,7 +19,7 @@
         long endTimeParallel = System.nanoTime();
         long parallelTime = endTimeParallel - beginTimeParallel;
         printMatrix(parallelSolution, diff);
-        System.out.println("Время паралельного вычисления: " + parallelTime + " ns");
+        System.out.println("Время паралельного  вычисления: " + parallelTime + " ns");
 
         System.out.println("Точное решения:");
         printErrors(approximateResult, calculateExactResult(diff), diff);
