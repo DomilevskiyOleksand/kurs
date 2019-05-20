@@ -33,11 +33,11 @@ public class ParallelSol {
         for (int i = 1; i < tPointsAmount; ++i, t += tau) {
             w[i][0] = diff.calculateLeft(t);
 
-            int I =i;
+            int z =i;
 
             IntStream.range(1, diff.getHpointsAmount() - 1).parallel().forEach(j -> {
 
-                w[I][j] = diff.calculateApproximateSolution(w[I - 1][j - 1], w[I - 1][j], w[I - 1][j + 1]);
+                w[z][j] = diff.calculateApproximateSolution(w[z - 1][j - 1], w[z - 1][j], w[z - 1][j + 1]);
             });
             w[i][hPointsAmount - 1] = diff.calculateRight(t);
         }
